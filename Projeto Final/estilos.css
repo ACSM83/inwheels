@@ -1,0 +1,186 @@
+/*---------------------------------------------------
+------------ESTILOS GERAIS--------------------------*/
+
+body{
+    font-family: Univers, sans-serif;
+    background-color: black;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+#vestuario{
+    font-family: Univers, sans-serif;
+    background-color: white;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.bg-black{
+    background-color: black;
+}
+/*---------------------------------------------------
+------------HEADER--------------------------*/
+header{
+    border-bottom: 3px solid red;
+}
+.logo{
+    width:50%;
+    height: 75%;
+}
+
+.text-black{
+    color: black;
+    font-weight: bold;
+}
+.text-red{
+    color: red;
+}
+.btn-black{
+    background-color: black;
+    color: white;
+}
+.btn-white{
+    background-color: white;
+    color: black;
+}
+.btn-red{
+    background-color: red;
+}
+/*--------NAVBAR------------------------*/
+
+.navbar-toggler-icon{
+    color: white;
+}
+.input-search{
+    background-color: black;
+    color: white;
+}
+nav a:hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+#pagetitle, #pagetitle2, #pagetitle3, #pagetitle4{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+.dropdown-menu a:hover{
+    color: red;
+    border: none;
+}
+/*----------------------MAIN----------------------*/
+.bg-red{
+    background-color: red;
+}
+.bg-white{
+    background-color: white;
+}
+
+.btn-red{
+    background-color: white;
+    border: 3px solid red;
+    border-radius: 18px;
+    color: red;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+.btnblack{
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 18px;
+    color: black;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+a main:hover{
+    background-color: red;
+    border: 3px solid white;
+    border-radius: 18px;
+    color: white;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+.text-black{
+    background-color: white;
+    color: black;
+}
+.imageformat {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    box-shadow: 3px 5px red;
+}
+.border-shadow{
+    box-shadow: rgba(0, 0, 0, 0.7);
+}
+.artigos{
+    width: 190px;
+    height: 200px;
+}
+.títulos {font-size: 2rem;
+}
+
+.border-bottom-yellow{
+     border-bottom: 2px solid #ffc107;
+ }
+.border-bottom-red{
+    border-bottom: 2px solid #dc3545;
+}
+#desportivas a:hover{
+    border-bottom: 3px solid white;
+    font-weight: bold;
+}
+#desportivas header{
+    border-bottom: 3px solid white;
+}
+#desportivas footer{
+    border-top: 3px solid white;
+}
+.motas, .motas2{
+     font-family: Stencil, sans-serif;
+ }
+
+/*-------------FOOTER-----------------------------*/
+footer{
+    border-top: 3px solid red;
+}
+/*---------------------------------------------------
+----------MEDIA QUERIES----------------------------*/
+
+/* Extra small devices (Opx --- 599px) */
+@media only screen and (max-width: 599px) {
+    #lg{
+        text-align: center;
+    }
+    h4{
+        color: red;
+    }
+    #btncontactos, #confirmarentrega, #confirmarentrega2, #btnfinalizar{
+        width: 100%;
+    }
+
+}
+/* Small devices (600px --- 767px) */
+@media only screen and (min-width: 600px){
+    h4, p, input, .card-header, .btn, nav a{
+        font-size: 1rem;
+    }
+    #confirmarentrega, #confirmarentrega2{
+        width: 75%;
+    }
+}
+
+/* Medium devices (768px --- 991px) */
+@media only screen and (min-width: 768px) {
+    h4{
+    color: red;
+    }
+    #confirmarentrega, #confirmarentrega2{
+        width: 50%;
+    }
+}
+
+/* Large devices (992px ---1199px) */
+@media only screen and (min-width: 992px) {
+
+    }

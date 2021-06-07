@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>In Wheels - Detalhes Produto</title>
+</head>
+<body id="vestuario">
+<header class="container-fluid m-0 p-0">
+    <section class="row">
+        <article class="col-sm-4 text-center m-0 p-0">
+            <a href="index.html">
+                <img src="Imagens/Logocris.png" class="m-2 logo">
+            </a>
+        </article>
+        <article class="col-sm-4 my-auto p-0">
+            <form class="form-inline">
+                <input class="form-control w-75 ml-4 mr-0" type="search" placeholder="Pesquisa" aria-label="Search" id="inputsearch">
+                <button class="btn btn-white my-2 mx-0 text-right" type="submit">
+                    <i class="fas fa-search fa-2x text-black text-right mx-0" aria-hidden="true"></i>
+                </button>
+            </form>
+        </article>
+        <article class="col-sm-2 m-auto p-0 text-center">
+            <button type="button" class="btn btn-white m-1 my-auto" data-toggle="modal" data-target="#myModal">
+                <span class="fas fa-user fa-2x text-black"></span>
+            </button>
+            <button type="button" class="btn btn-white m-1">
+                <span class="fas fa-shopping-bag fa-2x text-black"></span>
+            </button>
+        </article>
+
+    </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-white text-dark">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title text-white">Área Reservada</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="text-center my-2 text-black">Iniciar Sessão</h6>
+                    <form action="#" method="post" class="ml-2">
+                        <input type="email" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique o seu e-mail" name="user">
+                        <input type="password" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique a sua palavra-passe" name="pswd">
+                        <a class="small">Esqueci-me da minha palavra-passe ></a>
+                        <button type="submit" class="btn btn-black btn-block text-white mt-1">Iniciar sessão</button>
+                    </form>
+                    <h6 class="text-center my-2 text-black">Ainda não se registou?</h6>
+                    <a href="registo.html" type="button" class="btn btn-black btn-block text-white mt-1">Criar conta</a>
+
+                </div>
+
+                <div class="modal-footer bg-black">
+                    <p class="small text-white">&copy; 2019 In'Wheels</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-sm sticky-top bg-black p-3">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="fas fa-bars fa-2x text-white"></span>
+    </button>
+    <p class="d-sm-none d-inline-block text-center text-white m-0" id="pagetitle">DETALHE PRODUTO</p>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">MOTAS</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="desportivas.html">Desportivas</a>
+                <a class="dropdown-item" href="classicos.html">Clássicas</a>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="eventos.html">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="vestuario.html">VESTUÁRIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="sobrenos.html">SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contactos.html">CONTACTOS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container-fluid m-0 p-0">
+    <section class="row m-0">
+        <article class="col-sm-4 my-4">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators text-dark" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="Imagens/fato1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagens/fato2.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="Imagens/fato3.png" alt="Third slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </article>
+        <article class="col-sm-8">
+            <h3 class="text-black my-4">Soul - Casaco de pele</h3>
+            <article class="col-sm-6 d-inline-block p-0">
+            <div class="dropdown m-0">
+                <button class="btn btn-red dropdown-toggle px-5 mb-2 w-100 text-center" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tamanho
+                </button>
+                <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#">XS</a>
+                    <a class="dropdown-item" href="#">S</a>
+                    <a class="dropdown-item" href="#">M</a>
+                    <a class="dropdown-item" href="#">L</a>
+                    <a class="dropdown-item" href="#">XL</a>
+                    <a class="dropdown-item" href="#">XXL</a>
+                </div>
+            </div>
+            </article>
+            <article class="col-sm-5 d-inline-block p-0">
+                <div class="dropdown m-0">
+                    <button class="btn btn-red dropdown-toggle px-5 mb-2 w-100 text-center" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cor
+                    </button>
+                    <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton3">
+                        <a class="dropdown-item text-black" href="#">Preto</a>
+                        <a class="dropdown-item text-primary" href="#">Azul</a>
+                        <a class="dropdown-item text-success" href="#">Verde</a>
+                        <a class="dropdown-item text-danger" href="#">Vermelho</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-12 p-0 my-2">
+                <p>-20% <del>600,00€</del></p>
+                <h3 class="my-0">480,00€</h3>
+            </article>
+            <article class="col-12 p-0 my-2">
+                <p class="text-justify py-4 m-0">
+                    Estilo + Sofisticação + Performance. Desenhada por Aldo Drudi e confeccionada pela Dainese, a jaqueta de couro Trisoft full grain é uma peça de vestuário certificada pela CE, com proteções invisíveis, dedicada ao homem que quer se destacar. Macia e confortável graças ao couro de alta qualidade, a jaqueta Soul também tem um lado mais ousado: nas aplicações nos quadris de tecido elástico S1 o contorno do farol XDiavel é impresso em tom sobre tom. Predisposta para a inserção do protetor de costas, esta peça, sinônimo de estilo sofisticado e genuíno, é perfeita para experimentar a pura emoção do Slow Riding.</p>
+            </article>
+            <article class="col-sm-2 d-inline-block p-0">
+                <div class="dropdown m-0">
+                    <button class="btn btn-red dropdown-toggle px-5 w-100 mb-2 text-center" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        1
+                    </button>
+                    <div class="dropdown-menu w-100 text-center" aria-labelledby="dropdownMenuButton4">
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                        <a class="dropdown-item" href="#">5</a>
+                        <a class="dropdown-item" href="#">6</a>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-9 d-inline-block p-0">
+                <a href="#" class="btn btn-black px-5 w-100 mb-2 text-center" data-toggle="modal" data-target="#myModal2">JUNTAR CARRINHO</a>
+            </article>
+        </article>
+        <div class="modal fade" id="myModal2">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-white text-dark">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title text-black">Este artigo foi adicionado ao seu carrinho</h5>
+                        <button type="button" class="close text-black" data-dismiss="modal">X</button>
+                    </div>
+
+                    <div class="modal-body row">
+                        <div class="col-6">
+                            <img src="Imagens/fato1.png" class="w-100">
+                        </div>
+                        <div class="col-5">
+                            <p class="font-weight-bold">Soul - Casaco de pele</p>
+                            <p class="m-0 p-0">Referência: 111000233</p>
+                            <p class="m-0 p-0">Tamanho: 38</p>
+                            <p class="m-0 p-0">Cor: Preto</p>
+                            <p class="m-0 p-0">Quantidade: 1</p>
+                            <p class="my-2 font-weight-bold">480,00€</p>
+                        </div>
+                        <button type="submit" class="btn btn-white btn-block text-black mt-1 mx-2">CONTINUAR A COMPRAR</button>
+                        <a href="carrinho.html" type="button" class="btn btn-black btn-block text-white mt-1 mx-2">FINALIZAR ENCOMENDA</a>
+
+                    </div>
+
+                    <div class="modal-footer bg-black">
+                        <p class="small text-white">&copy; 2019 In'Wheels</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="row m-auto">
+        <article class="col-12 text-center my-4">
+        <h2>Veja também</h2>
+        </article>
+
+        <article class="col-sm-2 text-center m-2 p-0 border border-shadow">
+            <figure class="m-0">
+                <img src="Imagens/casaco2.png" alt="Casaco de pele" class="w-75">
+                <figcaption><b>Stealth C2 - Casaco de Pele</b></figcaption>
+                <h3>524,70€</h3>
+            </figure>
+        </article>
+
+        <article class="col-sm-2 text-center m-2 p-0 border border-shadow">
+            <figure class="m-0">
+                <img src="Imagens/calca.png" alt="Calça tela" class="w-50">
+                <figcaption><b>Atacama C1 - Calça de Tela</b></figcaption>
+                <h3>445,32€</h3>
+            </figure>
+        </article>
+
+        <article class="col-sm-2 text-center m-2 p-0 border border-shadow">
+            <figure class="m-0">
+                <img src="Imagens/luvas.png" alt="Luvas" class="w-50">
+                <figcaption><b>Performance C2 - Luvas de pele</b></figcaption>
+                <h3>187,45€</h3>
+            </figure>
+        </article>
+
+        <article class="col-sm-2 text-center m-2 p-0 border border-shadow">
+            <figure class="m-0">
+                <img src="Imagens/capacete.png" alt="Capacete" class="w-50">
+                <figcaption><b>Capacete Ducati Corse Carbon 2</b></figcaption>
+                <h3>4.254,83€</h3>
+            </figure>
+        </article>
+
+        <article class="col-sm-2 text-center m-2 p-0 border border-shadow">
+            <figure class="m-0">
+                <img src="Imagens/meias.png" alt="Meias" class="w-50">
+                <figcaption><b>Meias Performance V2</b></figcaption>
+                <h3>24,79€</h3>
+            </figure>
+        </article>
+    </section>
+</main>
+
+<footer class="row mt-2 mx-0 px-0 bg-dark">
+    <article class="col-12 text-center">
+        <div class="py-4" id="media">
+            <small class="text-white my-2"> Siga-nos nas redes sociais:</small><br>
+            <span class="fab fa-facebook fa-2x text-white m-2"></span>
+            <span class="fab fa-instagram fa-2x text-white m-2"></span>
+            <span class="fab fa-youtube fa-2x text-white m-2"></span>
+            <span class="fab fa-twitter fa-2x text-white m-2"></span>
+            <span class="fab fa-whatsapp fa-2x text-white m-2"></span>
+        </div>
+    </article>
+
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>In'Wheels</b></p>
+        <a href="sobrenos.html" target="_blank" class="text-white"><small>Quem somos</small></a><br>
+        <a href="contactos.html" target="_blank" class="text-white"><small>Contactos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Política de Privacidade e cookies</small></a><br>
+        <a href="#" class="text-white"><small>Livro de Reclamações Eletrónico</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Condições gerais de Venda</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Serviços</b></p>
+        <a href="#" class="text-white"><small>Ajuda</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Guia de tamanhos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Trocas & Devoluções</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Modalidades de Pagamento:</b></p>
+        <span class="fab fa-cc-mastercard fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-visa fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-paypal fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-amex fa-2x text-white m-2"></span>
+    </article>
+
+    <article class="col-12 text-center my-3">
+        <small class="text-white py-4" id="copy">Projeto Final &copy; LABMM2 - Novas Tecnologias da Comunicação</small>
+    </article>
+</footer>
+
+</body>
+</html>

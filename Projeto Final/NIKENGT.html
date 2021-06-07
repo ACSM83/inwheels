@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>In Wheels - YAMAHA NIKEN GT</title>
+</head>
+<body>
+<header class="container-fluid m-0 p-0">
+    <section class="row">
+        <article class="col-sm-4 text-center m-0 p-0">
+            <a href="index.html">
+                <img src="Imagens/Logocrisbranco.png" class="m-2 logo">
+            </a>
+        </article>
+        <article class="col-sm-4 my-auto p-0">
+            <form class="form-inline">
+                <input class="form-control w-75 ml-4 mr-0" type="search" placeholder="Pesquisa" aria-label="Search" id="inputsearch">
+                <button class="btn btn-black my-2 mx-0 text-right" type="submit">
+                    <i class="fas fa-search fa-2x text-white text-right mx-0" aria-hidden="true"></i>
+                </button>
+            </form>
+        </article>
+        <article class="col-sm-2 m-auto p-0 text-center">
+            <button type="button" class="btn btn-black m-1 my-auto" data-toggle="modal" data-target="#myModal">
+                <span class="fas fa-user fa-2x text-white"></span>
+            </button>
+            <button type="button" class="btn btn-black m-1">
+                <span class="fas fa-shopping-bag fa-2x text-white"></span>
+            </button>
+        </article>
+
+    </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-white text-dark">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title text-white">Área Reservada</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="text-center my-2 text-black">Iniciar Sessão</h6>
+                    <form action="#" method="post" class="ml-2">
+                        <input type="email" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique o seu e-mail" name="user">
+                        <input type="password" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique a sua palavra-passe" name="pswd">
+                        <a class="small">Esqueci-me da minha palavra-passe ></a>
+                        <button type="submit" class="btn btn-black btn-block text-white mt-1">Iniciar sessão</button>
+                    </form>
+                    <h6 class="text-center my-2 text-black">Ainda não se registou?</h6>
+                    <a href="registo.html" type="button" class="btn btn-black btn-block text-white mt-1">Criar conta</a>
+
+                </div>
+
+                <div class="modal-footer bg-black">
+                    <p class="small text-white">&copy; 2019 In'Wheels</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-sm text-black sticky-top bg-primary p-3">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="fas fa-bars fa-2x text-white"></span>
+    </button>
+    <p class="d-sm-none d-inline-block text-center text-white m-0" id="pagetitle">NIKEN GT</p>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">MOTAS</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="desportivas.html">Desportivas</a>
+                <a class="dropdown-item" href="classicos.html">Clássicas</a>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="eventos.html">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="vestuario.html">VESTUÁRIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="sobrenos.html">SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contactos.html">CONTACTOS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <section class="row">
+        <article class="col-12 text-center my-4">
+            <h1 class="text-primary">NIKEN GT</h1>
+        </article>
+    </section>
+    <section class="row justify-content-center">
+        <article class="col-auto">
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Imagens/NGT1.jpg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h3>NIKEN GT</h3>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/NGT2.jpg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h3>NIKEN GT</h3>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagens/NGT3.jpg" class="img-fluid">
+                        <div class="carousel-caption">
+                            <h3>NIKEN GT</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+
+        </article>
+    </section>
+    <section class="row">
+        <article class="col-12 m-2 p-4">
+            <h2 class="text-primary">CARACTERÍSTICAS</h2>
+            <ul>
+                <li class="text-white text-justify">Design de 3 rodas radical, ousado e único</li>
+                <li class="text-white text-justify">Tecnologia avançada de inclinação das duas rodas</li>
+                <li class="text-white text-justify">Ângulo de inclinação elevado, máximo de 45 graus</li>
+                <li class="text-white text-justify">Direção Ackerman, suspensão dianteira invertida dupla</li>
+                <li class="text-white text-justify">Motor de 847 cc, 3 cilindros, refrigeração líquida, DOHC CP3</li>
+                <li class="text-white text-justify">TCS, QSS, embraiagem A&S, D-MODE, controlo da velocidade de cruzeiro</li>
+            </ul>
+            <article class="col-12 pl-0 pr-4">
+                <h2 class="text-primary my-2"> APREFEIÇOADA PARA A ESTRADA</h2>
+                <p class="text-white text-justify">A NIKEN GT é uma moto original da Yamaha enriquecida com um conjunto de acessórios genuínos da Yamaha que consiste em malas laterais semi-rígidas de 25 litros em ABS com suportes que são montados por um concessionário oficial da Yamaha.
+                <p class="text-white text-justify">Agora, a Yamaha está a levar este novo conceito ousado para um novo território com a NIKEN GT. Com um para-brisas mais alto que protege melhor contra o vento e a chuva, um banco confortável, malas laterais, punhos aquecidos e muito mais, esta Sport Tourer de vanguarda permite enfrentar as condições de estrada mais difíceis com conforto, mesmo com mau tempo.</p>
+                <p class="text-white text-justify">Seja para enfrentar estradas muito sinuosas, viagens longas ou fins de semana fora, esta Sport Tourer de nova geração oferece um elevado nível de conforto com controlo imbatível e diversão máxima em qualquer estação do ano.</p>
+            </article>
+            <article class="col-12 p-0">
+                <a href="desportivas.html" class="text-primary">< Voltar</a>
+            </article>
+
+        </article>
+    </section>
+</main>
+
+<footer class="row mt-2 mx-0 px-0 bg-dark">
+    <article class="col-12 text-center">
+        <div class="py-4" id="media">
+            <small class="text-white my-2"> Siga-nos nas redes sociais:</small><br>
+            <span class="fab fa-facebook fa-2x text-white m-2"></span>
+            <span class="fab fa-instagram fa-2x text-white m-2"></span>
+            <span class="fab fa-youtube fa-2x text-white m-2"></span>
+            <span class="fab fa-twitter fa-2x text-white m-2"></span>
+            <span class="fab fa-whatsapp fa-2x text-white m-2"></span>
+        </div>
+    </article>
+
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>In'Wheels</b></p>
+        <a href="sobrenos.html" target="_blank" class="text-white"><small>Quem somos</small></a><br>
+        <a href="contactos.html" target="_blank" class="text-white"><small>Contactos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Política de Privacidade e cookies</small></a><br>
+        <a href="#" class="text-white"><small>Livro de Reclamações Eletrónico</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Condições gerais de Venda</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Serviços</b></p>
+        <a href="#" class="text-white"><small>Ajuda</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Guia de tamanhos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Trocas & Devoluções</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Modalidades de Pagamento:</b></p>
+        <span class="fab fa-cc-mastercard fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-visa fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-paypal fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-amex fa-2x text-white m-2"></span>
+    </article>
+
+    <article class="col-12 text-center my-3">
+        <small class="text-white py-4" id="copy">Projeto Final &copy; LABMM2 - Novas Tecnologias da Comunicação</small>
+    </article>
+</footer>
+
+</body>
+</html>

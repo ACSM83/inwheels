@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>In Wheels - Clássicos</title>
+</head>
+<body>
+<header class="container-fluid m-0 p-0">
+    <section class="row">
+        <article class="col-sm-4 text-center m-0 p-0">
+            <a href="index.html">
+                <img src="Imagens/Logocrisbranco.png" class="m-2 logo">
+            </a>
+        </article>
+        <article class="col-sm-4 my-auto p-0">
+            <form class="form-inline">
+                <input class="form-control w-75 ml-4 mr-0" type="search" placeholder="Pesquisa" aria-label="Search" id="inputsearch">
+                <button class="btn btn-black my-2 mx-0 text-right" type="submit">
+                    <i class="fas fa-search fa-2x text-white text-right mx-0" aria-hidden="true"></i>
+                </button>
+            </form>
+        </article>
+        <article class="col-sm-2 m-auto p-0 text-center">
+            <button type="button" class="btn btn-black m-1 my-auto" data-toggle="modal" data-target="#myModal">
+                <span class="fas fa-user fa-2x text-white"></span>
+            </button>
+            <button type="button" class="btn btn-black m-1">
+                <span class="fas fa-shopping-bag fa-2x text-white"></span>
+            </button>
+        </article>
+
+    </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-white text-dark">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title text-white">Área Reservada</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="text-center my-2 text-black">Iniciar Sessão</h6>
+                    <form action="#" method="post" class="ml-2">
+                        <input type="email" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique o seu e-mail" name="user">
+                        <input type="password" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique a sua palavra-passe" name="pswd">
+                        <a class="small">Esqueci-me da minha palavra-passe ></a>
+                        <button type="submit" class="btn btn-black btn-block text-white mt-1">Iniciar sessão</button>
+                    </form>
+                    <h6 class="text-center my-2 text-black">Ainda não se registou?</h6>
+                    <a href="registo.html" type="button" class="btn btn-black btn-block text-white mt-1">Criar conta</a>
+
+                </div>
+
+                <div class="modal-footer bg-black">
+                    <p class="small text-white">&copy; 2019 In'Wheels</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-sm text-black sticky-top bg-warning p-3">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="fas fa-bars fa-2x text-white"></span>
+    </button>
+    <p class="d-sm-none d-inline-block text-center text-white m-0" id="pagetitle">CLÁSSICAS</p>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">MOTAS</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="desportivas.html">Desportivas</a>
+                <a class="dropdown-item" href="classicos.html">Clássicas</a>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="eventos.html">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="vestuario.html">VESTUÁRIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="sobrenos.html">SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contactos.html">CONTACTOS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+ <main class="container-fluid m-0">
+        <section class="row">
+            <article class="col-md-12 m-2 p-2">
+                <img class="img-fluid m-0 w-100" src="VESPAS/vespa.png"/>
+            </article>
+
+            <article class="col-12 títulos font-weight-bold">
+                <h1 class="text-warning pl-4">Triumph</h1>
+            </article>
+
+            <article class="col-md-6 m-2 p-4">
+                <p class="font-weight-bold text-white text-center títulos">Scrambler 1200 XE</p>
+                <p class="text-white text-justify">Motor Bonneville de 1200 cc de elevado binário e desempenho, com refrigeração a líquido e afinação exclusiva "scrambler"	</p>
+                <p class="text-white text-justify">Baixa inércia, seis velocidades, motor bicilíndrico paralelo de 8 válvulas com cambota inclinada a 270° </p>
+                <p class="text-white text-justify">90 cv de potência máxima às 7.400 rpm</p>
+                <a href="#" class="btn btn-warning w-100 my-4">Ver +</a>
+            </article>
+
+            <article class="col-md-5 text-center border-bottom-yellow">
+                <img class="w-100 mb-4" src="Classicas/triumph.jpg"/>
+            </article>
+
+            <article class="col-md-6 m-2 p-4">
+                <p class="font-weight-bold text-white text-center títulos">Boneville Speed Twin</p>
+                <p class="text-white text-justify">A Speed Twin de 1200 cc reintroduz um nome ilustre na nossa linha modern classics, com uma nova e emocionante moto que reúne a potencialidade modern custom de nova geração e o ADN intemporal da Triumph com uma tecnologia de condução avançada e o máximo em desempenho e sensação roadster.</p>
+                <a href="#" class="btn btn-warning w-100 my-4">Ver +</a>
+            </article>
+
+            <article class="col-md-5 text-center mb-2 border-bottom-yellow">
+                <img class="w-100 mb-4" src="classicas/boneville.jpg"/>
+            </article>
+
+            <article class="col-12 títulos pt-1 font-weight-bold">
+                <h1 class="text-warning pl-4">Honda</h1>
+            </article>
+
+            <article class="col-md-6 m-2 p-4">
+                <p class="font-weight-bold text-white text-center títulos">VESPA 98 CORSA CIRCUITO</p>
+                <p class="text-white text-justify">A Vespa 98 Corsa foi construída especificamente para mostrar ao mundo a capacidade da pequena scooter de ser competitiva em corridas. O grande enxame de Vespas, que crescia nas ruas e praças da Itália, motivou Enrico Piaggio a produzir um veículo agressivo, que poderia ser um vencedor em pista.</p>
+                <a href="#" class="btn btn-warning w-100">Ver +</a>
+            </article>
+
+            <article class="col-md-5 text-center mb-2 border-bottom-yellow">
+                <img class="w-100 mb-4" src="classicas/vespa 98 Corsa Circuito- 1947.jpg"/>
+            </article>
+
+            <article class="col-md-6 m-2 p-4">
+                <p class="font-weight-bold text-white mt-2 text-center títulos border-top-yellow">VESPA 946 ARMANI</p>
+                <p class="text-white text-justify">Para celebrar o ano de 2015 - o 40º aniversário da fundação da Giorgio Armani e o 130º aniversário do Grupo Piaggio - a Emporio Armani desenhou uma edição especial da Vespa 946. Em consonância com o estilo da assinatura Armani, o designer criou uma combinação especial de cinzentos com apontamentos em verde, apenas visíveis sob determinadas condições de luz.</p>
+                <a href="#" class="btn btn-warning w-100 my-4">Ver +</a>
+            </article>
+
+            <article class="col-md-5 text-center mb-2 border-bottom-yellow">
+                <img class="w-100 mb-4" src="classicas/armani.jpeg"/>
+            </article>
+
+            <article class="col-12 títulos pt-1 font-weight-bold">
+                <h1 class="text-warning pl-4">Outros</h1>
+            </article>
+
+            <article class="col-md-6 m-2 p-4">
+                <p class="font-weight-bold text-white text-center mt-2 títulos">Honda CB350</p>
+                <p class="text-white text-justify">Lançada em 1968, esta moto de estilo café racer, leve, compacta e ágil, foi um grande sucesso de vendas, tanto dentro como fora do Japão, com mais de 250 mil exemplares construídos até 1973. Tinha um motor bicilíndrico de 326 cc que já atingia uns interessantes 36 cv, obtidos a umas sonoras 10.500 rpm, algo típico da Honda.</p>
+                <a href="#" class="btn btn-warning w-100 my-4">Ver +</a>
+            </article>
+
+            <article class="col-md-5 text-center mb-2 border-bottom-yellow">
+                <img class="w-100 mb-4" src="Classicas/Honda CB350jpg.jpg"/>
+            </article>
+
+            <article class="col-md-6 m-2 p-4">
+                <p class="font-weight-bold text-white text-center títulos">Honda Goldwing</p>
+                <p class="text-white text-justify">A primeira versão surgiu em Outubro de 1974 (lançada no Salão de Colónia na Alemanha) e rapidamente se tornou num modelo muito popular no mercado Norte-Americano, no Noroeste Europeu e na Austrália. Durante a sua história, foram introduzidas diversas modificações, tanto no seu desenho como na sua mecânica.</p>
+                <a href="#" class="btn btn-warning w-100 my-4">Ver +</a>
+            </article>
+
+            <article class="col-md-5 text-center mb-2 border-bottom-yellow">
+                <img class="w-100 mb-4" src="Classicas/honda goldwig.jpg"/>
+            </article>
+        </section>
+
+     </div>
+
+ </main>
+
+<footer class="row mt-2 mx-0 px-0 bg-dark">
+    <article class="col-12 text-center">
+        <div class="py-4" id="media">
+            <small class="text-white my-2"> Siga-nos nas redes sociais:</small><br>
+            <span class="fab fa-facebook fa-2x text-white m-2"></span>
+            <span class="fab fa-instagram fa-2x text-white m-2"></span>
+            <span class="fab fa-youtube fa-2x text-white m-2"></span>
+            <span class="fab fa-twitter fa-2x text-white m-2"></span>
+            <span class="fab fa-whatsapp fa-2x text-white m-2"></span>
+        </div>
+    </article>
+
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>In'Wheels</b></p>
+        <a href="sobrenos.html" target="_blank" class="text-white"><small>Quem somos</small></a><br>
+        <a href="contactos.html" target="_blank" class="text-white"><small>Contactos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Política de Privacidade e cookies</small></a><br>
+        <a href="#" class="text-white"><small>Livro de Reclamações Eletrónico</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Condições gerais de Venda</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Serviços</b></p>
+        <a href="#" class="text-white"><small>Ajuda</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Guia de tamanhos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Trocas & Devoluções</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Modalidades de Pagamento:</b></p>
+        <span class="fab fa-cc-mastercard fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-visa fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-paypal fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-amex fa-2x text-white m-2"></span>
+    </article>
+
+    <article class="col-12 text-center my-3">
+        <small class="text-white py-4" id="copy">Projeto Final &copy; LABMM2 - Novas Tecnologias da Comunicação</small>
+    </article>
+</footer>
+
+</body>
+</html>

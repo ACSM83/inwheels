@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>In Wheels - Eventos</title>
+</head>
+<body>
+<header class="container-fluid m-0 p-0">
+    <section class="row">
+        <article class="col-sm-4 text-center m-0 p-0">
+            <a href="index.html">
+                <img src="Imagens/Logocrisbranco.png" class="m-2 logo">
+            </a>
+        </article>
+        <article class="col-sm-4 my-auto p-0">
+            <form class="form-inline">
+                <input class="form-control w-75 ml-4 mr-0" type="search" placeholder="Pesquisa" aria-label="Search" id="inputsearch">
+                <button class="btn btn-black my-2 mx-0 text-right" type="submit">
+                    <i class="fas fa-search fa-2x text-white text-right mx-0" aria-hidden="true"></i>
+                </button>
+            </form>
+        </article>
+        <article class="col-sm-2 m-auto p-0 text-center">
+                <button type="button" class="btn btn-black m-1 my-auto" data-toggle="modal" data-target="#myModal">
+                    <span class="fas fa-user fa-2x text-white"></span>
+                </button>
+                <button type="button" class="btn btn-black m-1">
+                <span class="fas fa-shopping-bag fa-2x text-white"></span>
+                </button>
+        </article>
+
+    </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-white text-dark">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title text-white">Área Reservada</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="text-center my-2 text-black">Iniciar Sessão</h6>
+                    <form action="#" method="post" class="ml-2">
+                        <input type="email" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique o seu e-mail" name="user">
+                        <input type="password" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique a sua palavra-passe" name="pswd">
+                        <a class="small">Esqueci-me da minha palavra-passe ></a>
+                        <button type="submit" class="btn btn-black btn-block text-white mt-1">Iniciar sessão</button>
+                    </form>
+                    <h6 class="text-center my-2 text-black">Ainda não se registou?</h6>
+                    <a href="registo.html" type="button" class="btn btn-black btn-block text-white mt-1">Criar conta</a>
+
+                </div>
+
+                <div class="modal-footer bg-black">
+                    <p class="small text-white">&copy; 2019 In'Wheels</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-sm text-black sticky-top bg-white p-3">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="fas fa-bars fa-2x text-black"></span>
+    </button>
+    <p class="d-sm-none d-inline-block text-center text-black m-0" id="pagetitle">EVENTOS</p>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav dropdown">
+            <a class="nav-link dropdown-toggle text-black" href="#" data-toggle="dropdown">MOTAS</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="desportivas.html">Desportivas</a>
+                <a class="dropdown-item" href="classicos.html">Clássicas</a>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="eventos.html">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="vestuario.html">VESTUÁRIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="sobrenos.html">SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="contactos.html">CONTACTOS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<main class="container-fluid">
+    <section class="row my-3 justify-content-around text-right">
+        <article class="col-md-4 pl-2 pr-0 my-2">
+            <div class="dropdown m-2">
+                <button class="btn btn-red dropdown-toggle px-5 w-100" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Mês 2019
+                </button>
+                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Janeiro</a>
+                        <a class="dropdown-item" href="#">Fevereiro</a>
+                        <a class="dropdown-item" href="#">Março</a>
+                        <a class="dropdown-item" href="#">Abril</a>
+                        <a class="dropdown-item" href="#">Maio</a>
+                        <a class="dropdown-item" href="#">Junho</a>
+                        <a class="dropdown-item" href="#">Julho</a>
+                        <a class="dropdown-item" href="#">Agosto</a>
+                        <a class="dropdown-item" href="#">Setembro</a>
+                        <a class="dropdown-item" href="#">Outubro</a>
+                        <a class="dropdown-item" href="#">Novembro</a>
+                        <a class="dropdown-item" href="#">Dezembro</a>
+                    </div>
+            </div>
+        </article>
+        <article class="col-md-4 pl-2 pr-0">
+            <div class="dropdown m-2">
+                <button class="btn btn-red dropdown-toggle px-5 w-100" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ordenar por
+                </button>
+                <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#">+ Recentes</a>
+                    <a class="dropdown-item" href="#">A-Z</a>
+                </div>
+            </div>
+        </article>
+        </section>
+        <section class="card-columns mt-4">
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Vários Clubes Motard</div>
+                <img class="card-img-top img-fluid" src="Imagens/7Encontrao.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">7º Encontrão em Alcochete</h4>
+                    <p class="card-text">É já nos próximo dias 5 e 6 de Julho em Alcochete que decorre o 7º Encontro motard.
+                        Vem ver a feira motard, tattoos, barber shop, sorteio e mini-concertos.</p>
+                        <section class="row">
+                            <article class="col-12">
+                                <a href="#" class="btn btn-danger w-100">Ver +</a>
+                            </article>
+                            <article class="col-6 mx-0 my-3">
+                                <i class="far fa-heart fa-2x text-red"></i>
+                            </article>
+                            <article class="col-6 mx-0 my-3 text-right">
+                                <i class="fas fa-share-alt fa-2x text-red"></i>
+                            </article>
+                        </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard São Rafael</div>
+                <img class="card-img-top img-fluid" src="Imagens/SaoRafael.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">9ª Concentração Motard na Foz do Arelho</h4>
+                    <p class="card-text">Não percas nos dias 5, 6 e 7 de Julho a 9ª Concentração motard do Grupo Motard
+                        São Rafael na Foz do Arelho. Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Tigres da Estrada</div>
+                <img class="card-img-top img-fluid" src="Imagens/TigresdaEstrada.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">18ª Concentração Tigres no Carregado, Alenquer</h4>
+                    <p class="card-text">Não percas nos dias 5, 6 e 7 de Julho a 18ª Concentração motard do Grupo Motard
+                        Tigres da Estrada na Foz do Arelho. Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Motoclube Anjos Papa Kms</div>
+                <img class="card-img-top img-fluid" src="Imagens/AnjosPapaKms.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">5ª Concentração Anjos Papa Kms em Ovar</h4>
+                    <p class="card-text">É já nos próximo dias 5, 6 e 7 de Julho em Ovar que decorre a 5ª Concentração motard dos Anjos Papa Kms.
+                        Vem ver a feira motard, tattoos, barber shop, sorteio e mini-concertos.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Os Trinca Cereja</div>
+                <img class="card-img-top img-fluid" src="Imagens/TrincaCereja.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">10ª Concentração no Fundão</h4>
+                    <p class="card-text">Não percas nos dias 5, 6 e 7 de Julho a 10ª Concentração motard do Grupo Motard
+                        Trinca Cerejas no Campo da Gardunha, Fundão. Temos duches quentes, música ao vivo e animações. Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Motoclube Serra do Gerês</div>
+                <img class="card-img-top img-fluid" src="Imagens/MotoclubSerradoGeres.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">15ª Concentração, Serra do Gerês</h4>
+                    <p class="card-text">É já nos próximo dias 5, 6 e 7 de Julho na Serra do Gerês que decorre a 15ª
+                        Concentração do Motoclube. Vem disfrutar do ar livre e da boa companhia. O campismo é grátis!</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Moto Livres Club de Mourão</div>
+                <img class="card-img-top img-fluid" src="Imagens/MotoLivres.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">2ª Concentração Motard em Mourão</h4>
+                    <p class="card-text">É já nos próximo dias 5, 6 e 7 de Julho em Mourão que decorre a 2ª
+                        Concentração do Moto Livres Club. Temos camping, feira motard, tattoos, concertos bike wash e muitas surpresas.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Fantasmas do Asfalto</div>
+                <img class="card-img-top img-fluid" src="Imagens/FantasmasdoAsfalto.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">4º Convívio Motard em Nelas, Viseu</h4>
+                    <p class="card-text">É já nos próximo dias 5, 6 e 7 de Julho em Nelas que decorre o 4º
+                        Convívio Motard do Grupo Motard Fantasmas do Asfalto.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Associação Motociclista TerRíveis do Paralelo</div>
+                <img class="card-img-top img-fluid" src="Imagens/Terriveis%20do%20Paralelo.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">21ª Concentração Motard, Angeja</h4>
+                    <p class="card-text">É já nos próximo dias 5, 6 e 7 de Julho em Angeja que decorre a 21ª
+                        Concentração Motard dos Terríveis do Paralelo. A entrada é livre!</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Pechão</div>
+                <img class="card-img-top img-fluid" src="Imagens/GrupoMotardPechao.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">13º Encontro Motard em Pechão</h4>
+                    <p class="card-text">É já nos próximo dias 5 e 6 de Julho em Pechão que decorre o 13º
+                        Encontro Motard do Grupo Motard de Pechão.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Roda Lenta Grupo Motard</div>
+                <img class="card-img-top img-fluid" src="Imagens/RodaLenta.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">17º Aniversário, Oeiras</h4>
+                    <p class="card-text">É já nos próximo dias 5 e 6 de Julho em Oeiras que decorre o 17º
+                        Aniversário da Roda Lenta Grupo Motard. Temos petiscos, animação, concertos e muita animação. A entrada é livre!</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Saca Rolhas</div>
+                <img class="card-img-top img-fluid" src="Imagens/SacaRolhas.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">15ª Concentração Motard, Silveirinha Pequena, Pombal</h4>
+                    <p class="card-text">Não percas nos dias 12, 13 e 14 de Julho a 15ª Concentração motard do Grupo Motard
+                        Saca Rolhas em Silveirinha Pequena, Pombal. Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Os Trinta</div>
+                <img class="card-img-top img-fluid" src="Imagens/Os%20Trinta.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">18º Encontro Motard em Trinta, Guarda</h4>
+                    <p class="card-text">Não percas nos dias 12, 13 e 14 de Julho o 18º Encontro motard do Grupo Motard
+                        Os Trinta na Guarda. Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-danger">Moto Clube de Alverca</div>
+                <img class="card-img-top img-fluid" src="Imagens/MotoClubeAlverca.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">20ª Concentração Moto Clube Alverca</h4>
+                    <p class="card-text">Não percas nos dias 12, 13 e 14 de Julho a 20ª Concentração motard do Moto Clube de Alverca.
+                        Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Lobo e Companhia</div>
+                <img class="card-img-top img-fluid" src="Imagens/Lobo%20e%20Companhia.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">14ª Concentração em V.N.Gaia</h4>
+                    <p class="card-text">Não percas nos dias 12, 13 e 14 de Julho a 14ª Concentração motard do Grupo
+                        Motard Lobo e Compankia que irá decorrer no Estádio Jorge Sampaio em Pedroso. Faz já a tua inscrição.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Motoclube Dog's Land</div>
+                <img class="card-img-top img-fluid" src="Imagens/DogsLand.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">7º Moto Churrasco em Alcains</h4>
+                    <p class="card-text">Não percas nos dias 12, 13 e 14 de Julho o 7º Moto Churrasco do MotoClube Dog's Land na Casa dos Caçadores em Alcaíns.
+                        A entrada é livre.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Trilha Milhas</div>
+                <img class="card-img-top img-fluid" src="Imagens/Trilha%20Milhas.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">13º Aniversário em Limeiras, Constância</h4>
+                    <p class="card-text">Vem celebrar connosco o 13º aniversário do Grupo Motard Trilha Milhas no próximo
+                        dia 13 de Julho em Constância.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Ponto Final</div>
+                <img class="card-img-top img-fluid" src="Imagens/Ponto%20Final.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">2º Aniversário, Alhandra</h4>
+                    <p class="card-text">Vem celebrar connosco o 2º aniversário do Grupo Motard Ponto Finals no próximo
+                        dia 20 de Julho em Cachoeiras, Castanheira do Ribatejo. Temos prémios à tua espera.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Moto Clube de Faro</div>
+                <img class="card-img-top img-fluid" src="Imagens/MotoClubFaro.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">38ª Concentração Motard, Faro</h4>
+                    <p class="card-text">Não percas nos dias 18, 19 20 e 21 de Julho a 38ª Concentração do Moto Clube de Faro.
+                        Temos ótimos concertos à tua espera.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Milhafres do Campone</div>
+                <img class="card-img-top img-fluid" src="Imagens/MilhafresdoCampone.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">14ª Concentração Motard, S. João do Campo, Coimbra</h4>
+                    <p class="card-text">Não percas nos dias 19, 20 e 21 de Julho a 14ª Concentração Motard dos Milhafres do Campone em S. João do Campo, Coimbra.
+                        O espetáculo está à tua espera.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Cidade Sem Lei</div>
+                <img class="card-img-top img-fluid" src="Imagens/CidadeSemLei.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">5º Encontro Motard, Tavira</h4>
+                    <p class="card-text">Não percas nos dias 26 e 27 de Julho o 5º Encontro Motard do Grupo Motard Cidade sem Lei em Tavira.
+                        Esperamos por ti.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Motoclube Ases da Raia</div>
+                <img class="card-img-top img-fluid" src="Imagens/AsesdaRaia.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">10ª Concentração Motard, Vilar Formoso</h4>
+                    <p class="card-text">Não percas nos dias 26, 27 e 28 de Julho a 10ª Concentração Motard do Moto Clube Ases da Raia em Vilar Formoso.
+                        Esperamos por ti.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard de Chaves</div>
+                <img class="card-img-top img-fluid" src="Imagens/GrupoMotardChaves.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">8º Passeio em 50cm3, Chaves</h4>
+                    <p class="card-text"></p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Moto Clube Abutres do Douro</div>
+                <img class="card-img-top img-fluid" src="Imagens/AbutresdoDouro.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">21ª Concentração Motard, Sendim</h4>
+                    <p class="card-text">Não percas nos dias 26, 27 e 28 de Julho a 21ª Concentração Motard dos Abutres do Douro em Sendim.
+                        Esperamos por ti.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+            <div class="card">
+                <div class="card-header lead text-white bg-red">Grupo Motard Jagozes</div>
+                <img class="card-img-top img-fluid" src="Imagens/GrupoMotardJagozes.jpg">
+                <div class="card-body">
+                    <h4 class="card-title">4º Aniversário, Ericeira</h4>
+                    <p class="card-text">Não percas no dia 27 de Julho o 4º Aniversário do Grupo Motard Jagozes na Ericeira.
+                        Temos petiscos, sopa de peixe, porco no espeto, música ao vivo e muita cerveja. A entrada é livre.</p>
+                    <section class="row">
+                        <article class="col-12">
+                            <a href="#" class="btn btn-danger w-100">Ver +</a>
+                        </article>
+                        <article class="col-6 mx-0 my-3">
+                            <i class="far fa-heart fa-2x text-red"></i>
+                        </article>
+                        <article class="col-6 mx-0 my-3 text-right">
+                            <i class="fas fa-share-alt fa-2x text-red"></i>
+                        </article>
+                    </section>
+                </div>
+                <div class="card-footer font-weight-bold bg-red"></div>
+            </div>
+        </section>
+    </main>
+
+<footer class="row mt-2 mx-0 px-0 bg-dark">
+    <article class="col-12 text-center">
+        <div class="py-4" id="media">
+            <small class="text-white my-2"> Siga-nos nas redes sociais:</small><br>
+            <span class="fab fa-facebook fa-2x text-white m-2"></span>
+            <span class="fab fa-instagram fa-2x text-white m-2"></span>
+            <span class="fab fa-youtube fa-2x text-white m-2"></span>
+            <span class="fab fa-twitter fa-2x text-white m-2"></span>
+            <span class="fab fa-whatsapp fa-2x text-white m-2"></span>
+        </div>
+    </article>
+
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>In'Wheels</b></p>
+        <a href="sobrenos.html" target="_blank" class="text-white"><small>Quem somos</small></a><br>
+        <a href="contactos.html" target="_blank" class="text-white"><small>Contactos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Política de Privacidade e cookies</small></a><br>
+        <a href="#" class="text-white"><small>Livro de Reclamações Eletrónico</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Condições gerais de Venda</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Serviços</b></p>
+        <a href="#" class="text-white"><small>Ajuda</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Guia de tamanhos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Trocas & Devoluções</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Modalidades de Pagamento:</b></p>
+        <span class="fab fa-cc-mastercard fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-visa fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-paypal fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-amex fa-2x text-white m-2"></span>
+    </article>
+
+    <article class="col-12 text-center my-3">
+        <small class="text-white py-4" id="copy">Projeto Final &copy; LABMM2 - Novas Tecnologias da Comunicação</small>
+    </article>
+</footer>
+
+</body>
+</html>

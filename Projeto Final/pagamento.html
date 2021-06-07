@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>In Wheels - Pagamento</title>
+</head>
+<body id="vestuario">
+<header class="container-fluid m-0 p-0">
+    <section class="row">
+        <article class="col-sm-4 text-center m-0 p-0">
+            <a href="index.html">
+                <img src="Imagens/Logocris.png" class="m-2 logo">
+            </a>
+        </article>
+        <article class="col-sm-4 my-auto p-0">
+            <form class="form-inline">
+                <input class="form-control w-75 ml-4 mr-0" type="search" placeholder="Pesquisa" aria-label="Search" id="inputsearch">
+                <button class="btn btn-white my-2 mx-0 text-right" type="submit">
+                    <i class="fas fa-search fa-2x text-black text-right mx-0" aria-hidden="true"></i>
+                </button>
+            </form>
+        </article>
+        <article class="col-sm-2 m-auto p-0 text-center">
+            <button type="button" class="btn btn-white m-1 my-auto" data-toggle="modal" data-target="#myModal">
+                <span class="fas fa-user fa-2x text-black"></span>
+            </button>
+            <button type="button" class="btn btn-white m-1">
+                <span class="fas fa-shopping-bag fa-2x text-black"></span>
+            </button>
+        </article>
+
+    </section>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-white text-dark">
+                <div class="modal-header bg-black">
+                    <h5 class="modal-title text-white">Área Reservada</h5>
+                    <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                </div>
+
+                <div class="modal-body">
+                    <h6 class="text-center my-2 text-black">Iniciar Sessão</h6>
+                    <form action="#" method="post" class="ml-2">
+                        <input type="email" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique o seu e-mail" name="user">
+                        <input type="password" class="form-control bg-white text-dark border border-dark focus mt-1" placeholder="Indique a sua palavra-passe" name="pswd">
+                        <a class="small">Esqueci-me da minha palavra-passe ></a>
+                        <button type="submit" class="btn btn-black btn-block text-white mt-1">Iniciar sessão</button>
+                    </form>
+                    <h6 class="text-center my-2 text-black">Ainda não se registou?</h6>
+                    <a href="registo.html" type="button" class="btn btn-black btn-block text-white mt-1">Criar conta</a>
+
+                </div>
+
+                <div class="modal-footer bg-black">
+                    <p class="small text-white">&copy; 2019 In'Wheels</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<nav class="navbar navbar-expand-sm sticky-top bg-black p-3">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="fas fa-bars fa-2x text-white"></span>
+    </button>
+    <p class="d-sm-none d-inline-block text-center text-white m-0" id="pagetitle">Pagamento</p>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-toggle="dropdown">MOTAS</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="desportivas.html">Desportivas</a>
+                <a class="dropdown-item" href="classicos.html">Clássicas</a>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="eventos.html">EVENTOS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="vestuario.html">VESTUÁRIO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="sobrenos.html">SOBRE NÓS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="contactos.html">CONTACTOS</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="container-fluid">
+    <section class="row px-5">
+        <article class="col-sm-12 my-2">
+            <a href="entrega.html" class="font-weight-bold text-dark">< Voltar</a>
+        </article>
+        <article class="col-sm-12">
+            <h5 class="my-2">Escolher modo de pagamento</h5>
+        </article>
+
+        <article class="col-sm-6 border border-dark my-4 p-4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Radios" id="Radios1" value="option1" checked>
+                <span class="fab fa-cc-mastercard fa-2x text-dark m-2"></span>
+                <label class="form-check-label font-weight-bold" for="Radios1">
+                    MasterCard
+                </label>
+            </div>
+        </article>
+
+        <article class="col-sm-6 border border-dark my-4 p-4">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Radios" id="Radios2" value="option2">
+            <span class="fab fa-cc-visa fa-2x text-dark m-2"></span>
+            <label class="form-check-label font-weight-bold" for="Radios2">
+                VISA
+            </label>
+        </div>
+    </article>
+
+        <article class="col-sm-6 border border-dark my-4 p-4">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="Radios" id="Radios3" value="option3">
+            <span class="fab fa-cc-paypal fa-2x text-black m-2"></span>
+            <label class="form-check-label font-weight-bold" for="Radios3">
+                Paypal
+            </label>
+        </div>
+    </article>
+
+        <article class="col-sm-6 border border-dark my-4 p-4">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="Radios" id="Radios4" value="option4">
+                <span class="fab fa-cc-amex fa-2x text-black m-2"></span>
+                <label class="form-check-label font-weight-bold" for="Radios4">
+                    American Express
+                </label>
+
+            </div>
+        </article>
+
+    </section>
+
+    <section class="row mt-0">
+        <article class="col-sm-8 mx-auto">
+            <div class="jumbotron m-4">
+                <h3>Detalhes da encomenda</h3>
+                <table>
+                    <tr>
+                        <td>Total (sem desconto)</td>
+                        <td class="pl-5">600,00€</td>
+                    </tr>
+                    <tr>
+                        <td>Desconto</td>
+                        <td class="pl-5">120,00€</td>
+                    </tr>
+                    <tr>
+                        <td>Entrega</td>
+                        <td class="pl-5">GRÁTIS</td>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold">TOTAL</td>
+                        <td class="font-weight-bold pl-5">480,00€</td>
+                    </tr>
+                </table>
+            </div>
+        </article>
+    </section>
+    <section class="row">
+        <article class="col-12 text-right">
+            <button type="button" class="btn btn-black m-1 py-2 px-3 my-4" data-toggle="modal" data-target="#ModalSucesso" id="btnfinalizar">
+                FINALIZAR COMPRA
+            </button>
+            <article class="text-center">
+            <div class="modal fade text-center" id="ModalSucesso">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content bg-white text-dark">
+                        <div class="modal-header bg-success">
+                            <h5 class="modal-title text-white">Sucesso</h5>
+                            <button type="button" class="close text-white" data-dismiss="modal">X</button>
+                        </div>
+
+                        <div class="modal-body">
+                            <p>A sua encomenda foi registada com sucesso.</p>
+                            <p>Brevemente receberá no seu e-mail mais informação sobre o estado da sua encomenda.</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </article>
+        </article>
+    </section>
+</main>
+
+<footer class="row mt-2 mx-0 px-0 bg-dark">
+    <article class="col-12 text-center">
+        <div class="py-4" id="media">
+            <small class="text-white my-2"> Siga-nos nas redes sociais:</small><br>
+            <span class="fab fa-facebook fa-2x text-white m-2"></span>
+            <span class="fab fa-instagram fa-2x text-white m-2"></span>
+            <span class="fab fa-youtube fa-2x text-white m-2"></span>
+            <span class="fab fa-twitter fa-2x text-white m-2"></span>
+            <span class="fab fa-whatsapp fa-2x text-white m-2"></span>
+        </div>
+    </article>
+
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>In'Wheels</b></p>
+        <a href="sobrenos.html" target="_blank" class="text-white"><small>Quem somos</small></a><br>
+        <a href="contactos.html" target="_blank" class="text-white"><small>Contactos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Política de Privacidade e cookies</small></a><br>
+        <a href="#" class="text-white"><small>Livro de Reclamações Eletrónico</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Condições gerais de Venda</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Serviços</b></p>
+        <a href="#" class="text-white"><small>Ajuda</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Guia de tamanhos</small></a><br>
+        <a href="info.html" target="_blank" class="text-white"><small>Trocas & Devoluções</small></a><br>
+    </article>
+    <article class="col-sm-4 col-lg-4 pl-3 mb-4">
+        <p class="text-white"><b>Modalidades de Pagamento:</b></p>
+        <span class="fab fa-cc-mastercard fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-visa fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-paypal fa-2x text-white m-2"></span>
+        <span class="fab fa-cc-amex fa-2x text-white m-2"></span>
+    </article>
+
+    <article class="col-12 text-center my-3">
+        <small class="text-white py-4" id="copy">Projeto Final &copy; LABMM2 - Novas Tecnologias da Comunicação</small>
+    </article>
+</footer>
+</body>
+</html>
